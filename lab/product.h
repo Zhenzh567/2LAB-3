@@ -13,7 +13,7 @@ private:
 protected:
     std::string description;
     double expiration_date;
-    std::vector<ingr> composition;  // ИЗМЕНЕНО: теперь вектор ingr
+    std::vector<ingr> composition;  
 public:
     // конструктор полного заполнения
     Product(std::string a, std::string b, double c, double d, std::string e, std::vector<ingr>& comp);
@@ -29,8 +29,8 @@ public:
     double getPrice() const;
     std::string getLocation() const;
     double getExpiration_date() const;
-    std::string getDescription() const;  // ИСПРАВЛЕНО: опечатка
-    std::vector<ingr> getComposition() const;  // ИЗМЕНЕНО: возвращаем vector<ingr>
+    std::string getDescription() const; 
+    std::vector<ingr> getComposition() const;  
 
     // сеттеры
     void setPrice(double newPrice);
